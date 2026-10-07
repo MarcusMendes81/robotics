@@ -24,6 +24,15 @@ def rz(theta):
     ])
 
 
+# 1T2 -> p1 -> p2  
+#p2 = (1T2) -1 * p1
+
+def Htx(x,theta):
+    yz = np.dot(ry(theta), rz(theta))
+
+
+
+
 if __name__ == "__main__":
     theta = np.pi/2
     result = rx(theta) @ ry(theta)    
